@@ -1,0 +1,37 @@
+body {
+    max-width: 1200px; 
+    position: relative;
+}
+.menu {
+    width: 20%;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #f6f6f6;
+    box-shadow: 5px 0px 3px 0px #CCCCCC;
+}
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px 0 0 20px;
+    font-weight: normal;
+}
+.line  {
+    width: 98%;
+    margin: 0 auto;
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px 0 ;
+}
+ul {
+    list-style-type: none;
+    text-decoration: none;
+}
+li img {
+    width: 20px;
+    height: 20px;
+    
+}
+ul a {
+    text-decoration: none;
+}
