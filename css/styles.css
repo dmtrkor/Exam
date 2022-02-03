@@ -121,14 +121,14 @@ li {
     height: 45px;
     padding: 10px;
 }
-.dash_item h3, .dash_item h4, .dash_item h5 {
+.dash_item h3, .dash_item h4, .dash_item h5, .dash_item h6 {
     margin: 0;
     padding: 0;
     font-weight: normal;
     font-size: 11px;
     padding: 8px 10px 8px 10px;
 }
-.dash_item h3::before, .dash_item h4::before, .dash_item h5::before{
+.dash_item h3::before, .dash_item h4::before, .dash_item h5::before, .dash_item h6::before{
     width: 10px;
     height: 10px;
     background-size: contain;
@@ -148,6 +148,10 @@ li {
 .dash_item h5::before {
     content: '';
     background-image: url(../img/down.png);
+}
+.dash_item h6::before {
+    content: '';
+    background-image: url(../img/time.png);
 }
 .dash_line {
     width: 88%;
