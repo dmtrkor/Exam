@@ -2,10 +2,11 @@ body {
     max-width: 1200px; 
     position: relative;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     
 }
+/*MENU---------------------------------------------------------------------*/
 .menu {
     width: 20%;
     height: 100vh;
@@ -53,12 +54,10 @@ a::before {
     display: inline-block;
     background-size: contain
 }
-ul  li:nth-child(1) a::before{
-    content: '';
-    background-image: url(../img/dashboard_gray.svg);
-
+ul  li:nth-child(1) a{
+    background-color: #c32056;
 }
-ul  li:nth-child(1):hover a::before{
+ul  li:nth-child(1) a::before{
     content: '';
     background-image: url(../img/dashboard_white.svg);
 
@@ -103,10 +102,17 @@ li {
     display: flex;
     width: 90%;
 }
+/* MAIN---------------------------------------------------------------*/
 .main {
     margin-left: 23%;
 }
-.dash   {
+.main > p {
+    margin: 0;
+    font-size: 22px;
+    padding: 20px 0 0 0 ;
+}
+/*DASHBOARD----------------------------------------------------------*/
+.dash, .data   {
     display: flex;
     justify-content: space-between;
 }
@@ -115,20 +121,29 @@ li {
     position: relative;
     border: 1px solid #ccc;
     margin-top: 40px;
+    box-shadow: 5px 2px 5px 0px #E0DBD7;
 }
 .dash_item img {
     width: 45px;
     height: 45px;
     padding: 10px;
 }
-.dash_item h3, .dash_item h4, .dash_item h5, .dash_item h6 {
+.dash_item h3,
+.dash_item h4,
+.dash_item h5,
+.dash_item h6,
+.data_item h6 {
     margin: 0;
     padding: 0;
     font-weight: normal;
     font-size: 11px;
     padding: 8px 10px 8px 10px;
 }
-.dash_item h3::before, .dash_item h4::before, .dash_item h5::before, .dash_item h6::before{
+.dash_item h3::before,
+.dash_item h4::before,
+.dash_item h5::before,
+.dash_item h6::before,
+.data_item h6::before{
     width: 10px;
     height: 10px;
     background-size: contain;
@@ -149,7 +164,8 @@ li {
     content: '';
     background-image: url(../img/down.png);
 }
-.dash_item h6::before {
+.dash_item h6::before,
+.data_item h6::before {
     content: '';
     background-image: url(../img/time.png);
 }
@@ -169,13 +185,16 @@ li {
     left: 16px;
     top: -16px;
 }
-.shop {
+.green {
+    background-color: #448b00;
+}
+.yellow {
     background-color: #d89e24;
 }
-.tag {
+.blue {
     background-color: #274d97;
 }
-.plane {
+.red {
     background-color: #c32056;
 }
 .dash_item span {
@@ -190,4 +209,38 @@ li {
     text-align: right;
     font-size: 20px;
     padding: 0 5px 0 0 ;
+}
+/* DATA-----------------------------------------------------------*/
+.data {
+    margin-top: 40px;
+}
+.data_item {
+    width: 32%;
+    border: 1px solid #ccc;
+    position: relative;
+    box-shadow: 5px 2px 5px 0px #E0DBD7;
+}
+.graph {
+    width: 90%;
+    position: absolute;
+    left: 15px;
+    top: -15px;
+    text-align: center;
+}
+.data_item img {
+    width: 90%;
+    padding: 10px 0 10px 0;    
+}
+.data_item p {
+    margin: 140px 0px 10px 14px;
+    font-size: 20px;
+}
+.data_item span {
+    display: inline-block;
+    margin: 0 0 14px 14px;
+}
+
+{
+    content: '';
+    background-image: url();
 }
