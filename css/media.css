@@ -1,7 +1,5 @@
 @media (min-width: 800px) and (max-width:1000px){
-    .dash, .sale {
-        flex-wrap: wrap;
-    }
+    
     .dash_item {
         width: 48%;
     }
@@ -29,3 +27,31 @@
         font-size: 18px;
     }
 } 
+@media (min-width: 650px) and (max-width:800px){
+    .menu {
+        display: none;
+    }
+    .main {
+        margin-left: 3%;
+    }
+    .dash_item {
+        width: 48%;
+    }
+    .task ol{
+        justify-content: start;
+        gap: 30px   ;
+    }
+    .sale_item, .emp{
+        width: 100%;
+    }
+    .emp{
+        margin: 30px 20px 0 0 ;
+    }
+    .sale_item{
+        margin-right: 20px ;
+    }
+    label {
+        width: 90%  ;
+        font-size: 18px;
+    }
+}
