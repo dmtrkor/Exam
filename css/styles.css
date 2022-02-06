@@ -10,7 +10,7 @@ body {
 .menu {
     width: 20%;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     background-color: #f6f6f6;
@@ -46,6 +46,7 @@ ul a {
 }
 a:hover {
     background-color: #c32056;
+    box-shadow: 5px 2px 5px 0px #ccc;
 }
 a::before {
     margin-right: 10px;
@@ -56,11 +57,11 @@ a::before {
 }
 ul  li:nth-child(1) a{
     background-color: #c32056;
+    box-shadow: 5px 2px 5px 0px #ccc;
 }
 ul  li:nth-child(1) a::before{
     content: '';
-    background-image: url(../img/dashboard_white.svg);
-
+    background-image: url(../img/dashboard_white.svg);  
 }
 ul  li:nth-child(2) a::before{
     content: '';
@@ -106,16 +107,19 @@ li {
 .main {
     margin-left: 23%;
 }
-.main > p {
+.burg > p {
     margin: 0;
     font-size: 22px;
     padding: 20px 0 0 0 ;
 }
 /*DASHBOARD----------------------------------------------------------*/
-.dash, .data   {
+.dash, .data, .sale    {
     display: flex;
     justify-content: space-between;
+    margin-right: 20px;
 }
+
+
 .dash_item {
     width: 23%;
     position: relative;
@@ -239,8 +243,152 @@ li {
     display: inline-block;
     margin: 0 0 14px 14px;
 }
+/*SALE-----------------------------------------------------------*/
+.sale {
+    margin: 40px 0 0 0;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+.sale_item {
+    position: relative;
+    box-shadow: 5px 2px 5px 0px #e0dbd7;
+    border: 1px solid #ccc;
+    width: 49%;
 
-{
+}
+.task {
+    width: 93%;
+    position: absolute;
+    left: 15px;
+    top: -15px;
+}
+.task ol{
+    display: flex;
+    margin: 0;
+    padding: 20px ;
+    justify-content: space-between;
+    padding: 10px;
+}
+.task li{
+    width: auto;
+    
+}
+.task a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 5px;
+}
+.task a:hover{
+    background-color: rgba(231, 230, 230, 0.5);
+    box-shadow: unset;
+}
+.task ol li:nth-child(2){
+    background-color:rgba(231, 230, 230, 0.5);
+}
+.task ol li:nth-child(2) a::before,
+.task ol li:nth-child(3) a::before,
+.task ol li:nth-child(4) a::before {
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    vertical-align: text-bottom; 
+}
+.task ol li:nth-child(2) a::before {
     content: '';
-    background-image: url();
+    background-image: url(../img/bug.svg);
+}
+.task ol li:nth-child(3) a::before {
+    content: '';
+    background-image: url(../img/web.svg);
+}
+.task ol li:nth-child(4) a::before {
+    content: '';
+    background-image: url(../img/cloud.svg);
+}
+form {
+    display: block;
+}
+form ul {
+    margin: 51px 0 0 20px;
+    font-size: 12px;
+    padding: 0;
+    color: rgb(51, 51, 51);
+    width : 96%;
+}
+form li{
+    border-bottom: 1px solid #ccc;
+    margin:10px 0 10px 0 ;
+    width: 96% ;
+}
+form img{
+    margin-left: 15px;
+}
+form input{
+    margin: 0 20px  
+}
+.emp {
+   width: 48%;
+   border: 1px solid #ccc;
+   box-shadow: 5px 2px 5px 0px #e0dbd7;
+   position: relative;
+   padding-left: 10px;
+}
+.emp_item{
+    width: 93%;
+    position: absolute;
+    left: 15px;
+    top: -15px;
+    margin-right: 15px;
+    color: #fff;
+}
+.emp_item p{
+    padding-left: 10px;
+    margin: 5px 0 9px 0 ;
+}
+table {
+    width: 96%;
+    max-width: 100%;
+    box-sizing: border-box;
+    border-collapse: collapse;
+    margin-top: 40px;
+    padding-left: 10px;
+}
+thead {
+    color:#66b3c1 ;
+}
+table th, table td{
+    text-align: left;
+    padding: .5rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+/*FOOTER------------------------------------------*/
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+.footer ol{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+.footer a {
+    display: block;
+    padding: 15px;
+    text-transform:uppercase;
+    color: rgb(78, 78, 78);
+    text-decoration: none;
+    font-weight: bold;
+}
+.footer a:hover{
+    color: #ddd;
+    box-shadow: 5px 2px 5px 0px rgb(155, 154, 154);
+
+}
+.footer p{
+    padding: 15px;
 }

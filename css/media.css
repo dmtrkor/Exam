@@ -1,13 +1,31 @@
-@media (max-width:600px){
-    li {
-        display: inline-block;
-        width: 40%;
-        padding: 5px 0 0 0 ;
-        margin: 0;
+@media (min-width: 800px) and (max-width:1000px){
+    .dash, .sale {
+        flex-wrap: wrap;
     }
-    img {
-        width: 75px;
-        margin-left: 2%;
-        margin-right: 2%;
+    .dash_item {
+        width: 48%;
+    }
+    .menu a {
+        font-size: 13px;
+    }
+    .menu a::before{
+        margin-right: 4px;
+    }
+    .task ol{
+        justify-content: start;
+        gap: 30px   ;
+    }
+    .sale_item, .emp{
+        width: 100%;
+    }
+    .emp{
+        margin: 30px 20px 0 0 ;
+    }
+    .sale_item{
+        margin-right: 20px ;
+    }
+    label {
+        width: 90%  ;
+        font-size: 18px;
     }
 } 
