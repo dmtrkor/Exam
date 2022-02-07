@@ -24,7 +24,7 @@
     }
     label {
         width: 90%  ;
-        font-size: 18px;
+        font-size: 18px;        
     }
 } 
 @media (min-width: 650px) and (max-width:800px){
@@ -52,6 +52,105 @@
     }
     label {
         width: 90%  ;
+        font-size: 18px;        
+    }
+    .burg label {
+        display: inline-block;
+    }
+}
+@media (min-width: 500px) and (max-width:650px) {
+    .menu {
+        display: none;
+    }
+    .main {
+        margin-left: 3%;
+    }
+    .dash_item {
+        width: 48%;
+    }
+    .task ol{
+        justify-content: start;
+        gap: 30px   ;
+    }
+    .sale_item, .emp{
+        width: 100%;
+    }
+    .emp{
+        margin: 30px 20px 0 0 ;
+    }
+    .sale_item{
+        margin-right: 20px ;
+    }
+    label {
+        width: 90%  ;
         font-size: 18px;
+    }
+    .data_item {
+        width: 100%;  
+        margin-top: 30px;      
+    }
+    .graph {
+        width: 94%;
+        top: -20px; 
+      
+    }
+    .data_item p{
+        margin-top: 260px;
+    }
+    .burg ul {
+        font-size: 15px;
+    }
+    .burg label {
+        display: inline-block;
+    }
+}
+@media (min-width:320px) and (max-width:500px){
+    .menu {
+        display: none;
+    }
+    .main {
+        margin-left: 3%;
+    }
+    .dash_item {
+        width: 100%;
+    }
+    .task ol{
+        justify-content: start;
+        gap: 30px   ;
+    }
+    .sale_item, .emp{
+        width: 100%;
+    }
+    .emp{
+        margin: 30px 20px 0 0 ;
+    }
+    .sale_item{
+        margin-right: 20px ;
+    }
+    label {
+        width: 90%  ;
+        font-size: 16px;
+        
+    }
+    .data_item {
+        width: 100%;  
+        margin-top: 30px;      
+    }
+    .graph {
+        width: 94%;
+        top: -20px; 
+      
+    }
+    .data_item p{
+        margin-top: 200px;
+    }
+    .footer ol {
+        padding: 0;
+    }
+    .burg ul {
+        font-size: 15px;
+    }
+    .burg label {
+        display: inline-block;
     }
 }
