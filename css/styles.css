@@ -15,7 +15,7 @@ body {
     left: 0;
     top: 0;
     background-color: #f6f6f6;
-    box-shadow: 5px 0px 3px 0px #CCCCCC;
+    box-shadow: 5px 0 3px 0 #CCCCCC;
 }
 h2 {
     
@@ -24,7 +24,6 @@ h2 {
 }
 .line  {
     width: 98%;
-    margin: 0 auto;
     height: 1px;
     background-color: #ccc;
     margin: 20px 0 ;
@@ -40,14 +39,14 @@ li img {
 }
 ul a {
     text-decoration: none;
-    padding: 10px 0px 10px 18px;
+    padding: 10px 0 10px 18px;
     display: block;
     width: 100%;
     color: #beb9b7;
 }
 a:hover {
     background-color: #c32056;
-    box-shadow: 5px 2px 5px 0px #ccc;
+    box-shadow: 5px 2px 5px 0 #ccc;
     color: #fff;
 }
 a::before {
@@ -59,7 +58,7 @@ a::before {
 }
 ul  li:nth-child(1) a{
     background-color: #c32056;
-    box-shadow: 5px 2px 5px 0px #ccc;
+    box-shadow: 5px 2px 5px 0 #ccc;
 }
 ul  li:nth-child(1) a::before{
     content: '';
@@ -159,7 +158,7 @@ li {
     position: relative;
     border: 1px solid #ccc;
     margin-top: 40px;
-    box-shadow: 5px 2px 5px 0px #E0DBD7;
+    box-shadow: 5px 2px 5px 0 #E0DBD7;
 }
 .dash_item img {
     width: 45px;
@@ -172,7 +171,6 @@ li {
 .dash_item h6,
 .data_item h6 {
     margin: 0;
-    padding: 0;
     font-weight: normal;
     font-size: 11px;
     padding: 8px 10px 8px 10px;
@@ -256,7 +254,7 @@ li {
     width: 32%;
     border: 1px solid #ccc;
     position: relative;
-    box-shadow: 5px 2px 5px 0px #E0DBD7;
+    box-shadow: 5px 2px 5px 0 #E0DBD7;
 }
 .graph {
     width: 90%;
@@ -270,7 +268,7 @@ li {
     padding: 10px 15px 10px 0;    
 }
 .data_item p {
-    margin: 140px 0px 10px 14px;
+    margin: 140px 0 10px 14px;
     font-size: 20px;
 }
 .data_item span {
@@ -279,13 +277,12 @@ li {
 }
 /*SALE-----------------------------------------------------------*/
 .sale {
-    margin: 40px 20px 0 0;
+    margin: 40px 20px 60px 0;
     justify-content: space-between;
-    margin-bottom: 60px;
 }
 .sale_item {
     position: relative;
-    box-shadow: 5px 2px 5px 0px #e0dbd7;
+    box-shadow: 5px 2px 5px 0 #e0dbd7;
     border: 1px solid #ccc;
     width: 49%;
 
@@ -299,7 +296,6 @@ li {
 .task ol{
     display: flex;
     margin: 0;
-    padding: 20px ;
     justify-content: space-between;
     padding: 10px;
 }
@@ -367,7 +363,7 @@ form input{
 .emp {
    width: 48%;
    border: 1px solid #ccc;
-   box-shadow: 5px 2px 5px 0px #e0dbd7;
+   box-shadow: 5px 2px 5px 0 #e0dbd7;
    position: relative;
    padding-left: 10px;
 }
@@ -420,7 +416,7 @@ table th, table td{
 }
 .footer a:hover{
     color: #ddd;
-    box-shadow: 5px 2px 5px 0px rgb(155, 154, 154);
+    box-shadow: 5px 2px 5px 0 rgb(155, 154, 154);
 
 }
 .footer p{
